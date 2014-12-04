@@ -12,8 +12,8 @@ ExternalProject_Add(g2o_src
   GIT_REPOSITORY https://github.com/RainerKuemmerle/g2o.git
   GIT_TAG "0e6246603072dec08682bffde333a6e962b14f68"
   UPDATE_COMMAND ""
-  CONFIGURE_COMMAND cd ../g2o_src && mkdir build && cd build && cmake ../
-    -DCMAKE_INSTALL_PREFIX=${CATKIN_DEVEL_PREFIX}
+  CONFIGURE_COMMAND cd ../g2o_src && mkdir -p build && cd build && cmake ../
+    -DCMAKE_INSTALL_PREFIX=${CATKIN_DEVEL_PREFIX} -DCMAKE_BUILD_TYPE=Release
     -DBUILD_SHARED_LIBS=ON
   BUILD_COMMAND cd ../g2o_src && make -j8
   INSTALL_COMMAND cd ../g2o_src/lib/ &&
