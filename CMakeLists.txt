@@ -23,13 +23,10 @@ ExternalProject_Add(g2o_src
     cp libg2o_csparse_extension${CMAKE_SHARED_LIBRARY_SUFFIX} ${CATKIN_DEVEL_PREFIX}/lib/ &&
     cp libg2o_ext_freeglut_minimal${CMAKE_SHARED_LIBRARY_SUFFIX} ${CATKIN_DEVEL_PREFIX}/lib/ &&
     cp libg2o_hierarchical${CMAKE_SHARED_LIBRARY_SUFFIX} ${CATKIN_DEVEL_PREFIX}/lib/ &&
-    cp libg2o_incremental${CMAKE_SHARED_LIBRARY_SUFFIX} ${CATKIN_DEVEL_PREFIX}/lib/ &&
-    cp libg2o_interactive${CMAKE_SHARED_LIBRARY_SUFFIX} ${CATKIN_DEVEL_PREFIX}/lib/ &&
     cp libg2o_interface${CMAKE_SHARED_LIBRARY_SUFFIX} ${CATKIN_DEVEL_PREFIX}/lib/ &&
     cp libg2o_opengl_helper${CMAKE_SHARED_LIBRARY_SUFFIX} ${CATKIN_DEVEL_PREFIX}/lib/ &&
     cp libg2o_parser${CMAKE_SHARED_LIBRARY_SUFFIX} ${CATKIN_DEVEL_PREFIX}/lib/ &&
     cp libg2o_simulator${CMAKE_SHARED_LIBRARY_SUFFIX} ${CATKIN_DEVEL_PREFIX}/lib/ &&
-    cp libg2o_solver_cholmod${CMAKE_SHARED_LIBRARY_SUFFIX} ${CATKIN_DEVEL_PREFIX}/lib/ &&
     cp libg2o_solver_csparse${CMAKE_SHARED_LIBRARY_SUFFIX} ${CATKIN_DEVEL_PREFIX}/lib/ &&
     cp libg2o_solver_dense${CMAKE_SHARED_LIBRARY_SUFFIX} ${CATKIN_DEVEL_PREFIX}/lib/ &&
     cp libg2o_solver_eigen${CMAKE_SHARED_LIBRARY_SUFFIX} ${CATKIN_DEVEL_PREFIX}/lib/ &&
@@ -62,13 +59,10 @@ target_link_libraries(${PROJECT_NAME}
   ${CATKIN_DEVEL_PREFIX}/lib/libg2o_csparse_extension${CMAKE_SHARED_LIBRARY_SUFFIX}
   ${CATKIN_DEVEL_PREFIX}/lib/libg2o_ext_freeglut_minimal${CMAKE_SHARED_LIBRARY_SUFFIX}
   ${CATKIN_DEVEL_PREFIX}/lib/libg2o_hierarchical${CMAKE_SHARED_LIBRARY_SUFFIX}
-  ${CATKIN_DEVEL_PREFIX}/lib/libg2o_incremental${CMAKE_SHARED_LIBRARY_SUFFIX}
-  ${CATKIN_DEVEL_PREFIX}/lib/libg2o_interactive${CMAKE_SHARED_LIBRARY_SUFFIX}
   ${CATKIN_DEVEL_PREFIX}/lib/libg2o_interface${CMAKE_SHARED_LIBRARY_SUFFIX}
   ${CATKIN_DEVEL_PREFIX}/lib/libg2o_opengl_helper${CMAKE_SHARED_LIBRARY_SUFFIX}
   ${CATKIN_DEVEL_PREFIX}/lib/libg2o_parser${CMAKE_SHARED_LIBRARY_SUFFIX}
   ${CATKIN_DEVEL_PREFIX}/lib/libg2o_simulator${CMAKE_SHARED_LIBRARY_SUFFIX}
-  ${CATKIN_DEVEL_PREFIX}/lib/libg2o_solver_cholmod${CMAKE_SHARED_LIBRARY_SUFFIX}
   ${CATKIN_DEVEL_PREFIX}/lib/libg2o_solver_csparse${CMAKE_SHARED_LIBRARY_SUFFIX}
   ${CATKIN_DEVEL_PREFIX}/lib/libg2o_solver_dense${CMAKE_SHARED_LIBRARY_SUFFIX}
   ${CATKIN_DEVEL_PREFIX}/lib/libg2o_solver_eigen${CMAKE_SHARED_LIBRARY_SUFFIX}
