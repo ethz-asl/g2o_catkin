@@ -17,11 +17,11 @@ ExternalProject_Add(g2o_src
 )
 
 ExternalProject_Get_Property(g2o_src install_dir)
-include_directories(${install_dir}/include ${SUITESPARSE_INCLUDE_DIRS})
+include_directories(${install_dir}/include)
 
 cs_add_library(${PROJECT_NAME} src/dependency_tracker.cc)
 add_dependencies(${PROJECT_NAME} g2o_src)
-target_link_libraries(${PROJECT_NAME} ${SUITESPARSE_LIBRARIES})
+target_link_libraries(${PROJECT_NAME})
 cs_install()
 
 install(DIRECTORY ${CATKIN_DEVEL_PREFIX}/include/g2o
